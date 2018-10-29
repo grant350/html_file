@@ -1,0 +1,152 @@
+<!doctype html>
+
+<head>
+<script src="jquery.min.js"></script>
+
+</head>
+<body>
+
+
+
+<style>
+
+*{
+
+margin: 0px;
+padding: 0px;
+
+}
+body{
+
+height: 100vh;
+width: 100%;
+ margin: 0px;
+  background-image: url('default.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+.container{
+  width: 60%;
+  height: 400px;
+display: block;
+justify-content: center;
+background-color: rgba(40,0,0,0.8);
+position: relative;
+border: white solid 4px;
+border-radius: 15px;
+top: 70px;
+}
+.teacherBox{
+  width: 100%;
+
+  position: relative;
+display: block;
+justify-content: space-around;
+justify-content: space-between;
+height: 130px;
+top: 50px;
+border-bottom: 4px solid blue;
+
+}
+
+.studentBox{
+  width: 100%;
+
+  position: relative;
+display: block;
+justify-content: space-around;
+justify-content: space-between;
+height: 130px;
+top: 100px;
+
+}
+
+.teacherBut{
+  border-radius: 8px;
+width: 14%;
+height: 44px;
+color: red;
+background-color: white;
+border: 3px solid black;
+padding: 0px;
+margin: 0px;
+
+}
+
+.teacherLogin{
+width: 80%;
+margin:0px;
+position: relative;
+  border-radius: 8px;
+ height: 40px;
+ color: green;
+ padding: 0px;
+   text-decoration: none;
+background-color: white;
+
+}.teacherPass{
+width: 80%;
+margin:0px;
+display: block;
+position: relative;
+left: 7%;
+top: 5%;
+  border-radius: 8px;
+ height: 40px;
+ color: green;
+ padding: 0px;
+   text-decoration: none;
+background-color: white;
+
+}
+
+
+</style>
+<center>
+<div class="container">
+
+
+<form class="teacherBox" onsubmit="return false">
+<button class="teacherBut">login</button>
+<input class="teacherLogin" value="Teacher Id">
+<input class="teacherPass" value="Teacher Pass">
+</form>
+<!--
+md5
+if id matches henery then deveoper mode
+if it matches a teacher id then teacher mode which displays classes and maybe more
+if it matches student then bring them into the student access
+if it matches a student developer mode then bring them to a limited version to edit.
+
+-->
+
+<form class="studentBox" onsubmit="return false">
+<button class="teacherBut">login</button>
+<input class="teacherLogin" value="Student Id">
+<input class="teacherPass" value="Student Pass">
+</form>
+
+
+
+
+</div>
+
+</center>
+<script>
+$(".teacherLogin").on("click", function(){
+$(this).val(" ")
+
+})
+
+$(".teacherPass").on("click", function(){
+$(this).val(" ")
+
+})
+
+
+
+</script>
+</body>

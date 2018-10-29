@@ -1,0 +1,66 @@
+.cont{
+position: relative;
+display: flex;
+justify-content: center;
+width: 100%;
+}
+body{
+width: 100%;
+height: 700px;
+background-color: blue;
+}
+
+.odd{
+  text-align: center;
+
+width: 10%;
+height: 40px;
+color: black;
+background-image: url("back.jpg");
+  background-image: cover;
+  display:none;
+align-items: center;
+
+}
+.number{
+display: none;
+font-size: 60px;
+color: red;
+}
+
+.even{
+    text-align: center;
+align-items: center;
+width: 10%;
+height: 40px;
+color: black;
+background-image: url("back.jpg");
+  background-image: cover;
+  display:none;
+
+
+}
+
+
+
+
+
+
+.btnOne{
+width: 30%;
+height: 50px;
+background-color: red;
+color: black;
+font-size: 20px;
+border-radius: 8px;
+border: 4px solid white;
+}
+.btnTwo{
+width: 30%;
+height: 50px;
+background-color: red;
+color: black;
+font-size: 20px;
+border-radius: 8px;
+border: 4px solid white;
+}

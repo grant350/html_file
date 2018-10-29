@@ -1,0 +1,105 @@
+body {
+width: 100%;
+margin: 0px;
+
+/*height: 1500px;
+*/
+}
+#bit2p ,#bit3p, #bit5p ,#bit4p{
+color: green
+
+}
+#box{
+position: absolute;
+z-index: -5;
+margin: 0px;
+
+}
+
+#navformbar{
+left: 0px;
+top: 0px;
+display: flex;
+align-items: center;
+position: fixed;
+;
+background-color: transparent;
+}
+
+
+#img{
+margin: 0px;
+display: flex;
+
+}
+
+
+#shark{
+display: flex;
+align-items: center;
+
+}
+
+
+
+#nav{
+position: relative;
+height: 120px;
+z-index: +1;
+display: flex;
+align-items: center;
+background-color: rgba(0, 0, 0, .3);
+width: 100%;
+}
+
+#img2{
+margin: 0px;
+display: flex;
+}
+
+
+#error{
+display: flex;
+background-color: red;
+position: absolute;
+justify-content: center;
+justify-content: space-between;
+align-items: center;
+height: 400px;
+width: 100%;
+z-index: +2;
+border: 10px solid  black
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#dropAbout{
+
+height: 120px;
+width: 140px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#dropAbout:hover{
+background-color: rgba(10, 79, 49, .7);
+
+}
+
+#dropbar{
+color:red;
+font-size: 17px;
+text-decoration: none;
+}

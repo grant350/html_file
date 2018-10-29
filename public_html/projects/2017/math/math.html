@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<!--
+I need to make canvas
+learn apis
+download unity
+learn ajax / jQuery
+more javascritp
+animate project screen right
+css grids / css flex box
+learn ruby and sql
+
+
+
+learn IOS
+
+-->
+
+
+
+
+<head>
+<script src= "jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Pacifico|VT323" rel="stylesheet">
+<title>
+Math
+  </title>
+</head>
+<body>
+
+
+<center>
+<p id="title" style="color: green;"> $Calculating Interest$</p>
+
+<p id="loan-amount"> <span style="color: blue;">$</span>5000</p>
+
+<input id="TimeInYears" value="" placeholder="this is numbers"> </input>
+
+<p id="interest"> 10% </p>
+
+<p id="StartValue"> 0 </p>
+
+<p id="down-up" style="color: red;"> decrease Value </p>
+</center>
+<br/>
+
+<center><p id="answer"> This is the answer </p></center>
+
+<br/>
+
+
+
+
+<center>
+<p id="title" style="color: green;"> $Calculating simple Interest$</p>
+
+<p id="loan-amount"> <span style="color: blue;">$</span>5000</p>
+
+<p id="TimeInYears"> 5 years</p>
+
+<p id="interest"> 10% </p>
+
+<p id="StartValue"> 0 </p>
+
+<p id="dec-inc" style="color: red;"> decrease Value </p>
+
+</center>
+
+
+
+
+
+
+<style>
+body {
+background-color: black;
+color: white;
+font-size: 30px;
+font-family: 'VT323';
+
+
+}
+</style>
+
+
+
+<script>
+
+//var pv = prompt("enter number for PV ");
+//var rate = prompt("enter number for Rate not percent ");
+//var time = prompt("enter number for Time ");
+//var com = prompt("enter number for Compound");
+//let cat = prompt("enter  if increase  decrease");
+
+
+
+var chg = document.getElementById('answer')
+chg.onmouseover =  function chgColor(){
+chg.style.backgroundColor= "red"
+
+}
+function f(){
+chg.addEventListener('mouseover', function a(){
+$('#answer').hide('#answer');
+
+})
+
+
+
+
+chg.addEventListener('mouseover', function z(){
+
+$('#answer').show('#answer');
+
+
+})
+}
+f()
+
+/* function futureV(){
+
+var b = cat
+var answer = (b +(rate/(100*com)))
+console.log(answer)
+
+console.log(answer)
+var realA = Math.floor(Math.pow(answer , (time*com))*pv)
+console.log(realA)
+document.getElementById('answer').innerHTML = realA
+}
+futureV()
+*/
+</script>
+</body>

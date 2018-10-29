@@ -1,0 +1,93 @@
+body {
+margin: 0;
+width: 100%;
+height 1900px;
+/*
+my body will fit all computer screens with a wifth of any and a height of 2800 useless pixles.
+
+*/
+}
+
+
+#imagebuts{
+
+justify-content: center;
+align-items: center;
+display: flex;
+color: black;
+    background-color: #4CAF50;
+    border: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+#imgbut{
+display: flex;
+width: 150px;
+height: 30px;
+border: 15px;
+justify-content: center;
+font-size: 15px;
+font-style:bold;
+}
+
+
+.poptarts:hover .popt{
+display: block;
+
+}
+.popt{
+display:block;
+width: 30px;
+display: none;
+}
+
+
+#navbar{
+display: flex;
+font-size: 20px;
+background-color: #3488DB;
+height: 50px;
+width: 100%;
+justify-content: space-between;
+justify-content: space-around;
+align-items: center;
+
+}
+
+a{
+color: white;
+}
+
+#buttons{
+margin-top: 50px;
+width: 100%;
+height: 400px;
+background-color: #ccc;
+display: flex;
+justify-content: space-between;
+justify-content: space-around;
+align-items: center;
+}
+#changetext{
+width: 25%;
+height: 200px;
+font-family: cursive;
+font-size: 25px;
+}
+#changetexttwo{
+width: 25%;
+height: 200px;
+font-family: cursive;
+font-size: 25px;
+}
+
+#changetextthree{
+width: 25%;
+height: 200px;
+font-family: cursive;
+font-size: 25px;
+}
+a {
+text-decoration: none;
+}
