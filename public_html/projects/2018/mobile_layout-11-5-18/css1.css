@@ -1,0 +1,26 @@
+*{
+text-align:center;
+width:100%;
+margin:0px;
+padding:0px;
+}
+
+html{width:100%;
+height:100%;
+}
+
+
+.screen{
+color:red;
+font-family:cursive;
+border-bottom: yellow solid 3px;
+display:none;
+}
+
+
+.print{
+font-family:fantasy;
+color:green;
+border-bottom: yellow solid 3px;
+display:none;
+}
