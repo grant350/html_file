@@ -1,0 +1,24 @@
+body{
+height:auto;
+
+}
+.questions{
+width:100%;
+position:relative;
+background:transparent;
+margin-top:150px;
+padding-left:40px;
+list-style-image:url(smile.png);
+height:1500px;
+display:flex;
+flex-wrap:wrap;
+align-content:space-evenly;
+font-size:1.3em;
+}
+
+.question li, .question li p{
+min-width:700px;
+min-height:60px;
+
+
+}

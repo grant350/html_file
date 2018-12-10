@@ -8,11 +8,6 @@ margin: 0px;
 #bit2p ,#bit3p, #bit5p ,#bit4p{
 color: green
 
-}
-#box{
-position: absolute;
-z-index: -5;
-margin: 0px;
 
 }
 
@@ -25,6 +20,7 @@ position: fixed;
 ;
 background-color: transparent;
 }
+
 
 
 #img{
@@ -56,6 +52,12 @@ width: 100%;
 margin: 0px;
 display: flex;
 }
+
+
+
+
+
+
 
 
 #error{

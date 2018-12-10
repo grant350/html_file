@@ -1,0 +1,196 @@
+*{
+width:100%;
+position:relative;
+margin:0px;
+text-decoration:none;
+padding:0px;
+box-sizing:border-box;
+}
+
+p {text-align:center;}
+
+html,body{
+width:100%;
+height:100%;
+}
+
+body{
+height:100%;
+
+}
+
+.nav1{
+width:100%;
+height:70px;
+background:#3F84C1;
+display:flex;
+list-style:none;
+
+align-items:center;
+}
+
+.nav1 img{
+width:70px;
+height:80%;
+margin-left:15px;
+}
+.nav1 img:hover{
+border:2px solid black;
+width:80px;
+height:90%;
+}
+
+li{
+
+}
+
+li:hover a{
+color:orange; font-size:20px;
+}
+
+.slide-ct{
+  width:100%;
+  height:500px;
+  background-color:orange;
+overflow:hidden;
+position:relative;
+  margin:0px;
+  padding:0px;
+
+}
+
+
+.slide-ct div{
+  width: 100%;
+  height: 100%;
+  display:block;
+  position:absolute;
+}
+
+
+.im{
+  width:100%;
+  height:100%;
+  border:40px solid transparent;
+  border-image: url('./bug.jpg') 30 round;
+  border-image-repeat: stretch;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+
+
+.image-1{
+  background-color:blue;
+ background-image:url('arizona.jpg');
+
+}
+.image-2{
+    background-color:yellow;
+background-image:url('ocean2.jpg');
+}
+.image-3{
+    background-color:black;
+background-image:url('tree.jpg');
+}
+.image-4{
+    background-color:grey;
+  background-image:url('sun.jpg');
+}
+.image-5{
+    background-color:purple;
+   background-image:url('river.jpg');
+}
+@media screen and (max-width:460px) {
+body > .nav1{
+background:red;
+}
+.nav1 li a{
+  display:none;
+}
+.nav1 li img, .nav1 li .about{
+display:inline-block;
+}
+
+
+}
+
+.full-image{
+width:100%;height:100%;
+background-image:url('./beach1.jpg');
+background-size:cover;
+background-position: center;
+background-attachment: fixed;
+position: absolute;
+z-index:-2;
+
+}
+.full-image p{
+font-size:40px;
+font-family:cursive;
+text-align:center;
+height:400px;
+padding-top:59px;
+position:fixed;
+}
+
+.learn{
+width:100%;
+height:450px;
+margin-top:600px;
+display:flex;
+BACKGROUND:white;
+position:relative;
+justify-content: space-evenly;
+flex-wrap:wrap;
+font-size:40px;
+color:black;
+min-width:750px;
+}
+
+
+.learn p{
+  height:90px;
+  margin-top:auto;
+
+}
+.pic{
+width:300px;
+height:70%;
+transform:rotate(180deg);
+border:1px solid transparent;
+border-radius:90px;
+background-image:url('./computer.jpg');
+background-size:cover;
+background-position: center;
+
+}
+
+.pic:hover{
+border: 8px solid black;
+
+}
+
+footer{
+width:100%;
+height:270px;
+position:relative;
+display:flex;
+justify-content:center;
+background:grey;
+color:white;
+flex-wrap:wrap;
+font-size:30px;
+align-content:space-evenly;
+}
+
+footer a{
+color:red;
+text-align:center;
+
+}
+footer a:hover{
+color:blue;
+background:orange;
+}

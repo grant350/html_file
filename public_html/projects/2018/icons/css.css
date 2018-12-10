@@ -1,0 +1,124 @@
+*{
+  width:100%;
+  margin:0px;
+  padding:0px;
+  text-decoration:none;
+  list-style:none;
+  text-align:center;
+
+}
+
+
+
+html,body{
+  background:green;
+  width: 100%;height:100%;
+}
+
+body{
+
+
+}
+
+article{
+  width:100%;
+  height: 50px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  color:red;
+  font-size: 25px;
+}
+
+
+header{
+  width:100%;
+  height:90px;
+background:rgba(0,0,0,0.5);
+}
+
+
+.nav,ul{
+  width:100%;
+  height:100%;
+}
+ul{
+  display:flex;
+  justify-content:space-evenly;
+  box-sizing:border-box;
+}
+
+li{
+min-width:40px;
+  border:2px solid black;
+  box-sizing:border-box;
+height:100%;
+  align-items:center;
+  display:flex;
+  justify-content: center;
+}
+
+
+.nav a{
+  background-size:cover;
+width:60px;
+height:60px;}
+
+.nav .face{
+  background-image:url('./face.svg');
+}
+
+.nav .face:hover .face-jpg{
+display:flex;
+background:red;
+}
+
+.nav .twit{
+  background-image:url('./twit.svg');
+}
+.nav .face:hover{
+}
+
+.nav .snap{
+  background-image:url('./snap.svg');
+}
+.nav .snap:hover{
+}
+
+.nav .red{
+  background-image:url('./red.svg');
+}
+.nav .red:hover{
+}
+.nav .insta{
+  background-image:url('./insta.svg');
+}
+.nav .insta:hover{
+}
+.nav .phone{
+  background-image:url('./phone.svg');
+}
+.nav .phone:hover{
+}
+
+.nav2{
+height:200px;
+position:relative;
+margin-top:100px;
+background:rgba(0,0,0,0.5);
+min-width: 550px;
+}
+
+
+.nav2 a{
+  background-image:url('./download.jpg');
+  background-size:cover;
+width:60px;
+background-repeat:no-repeat;
+height:60px;
+}
+
+.nav2 .face-jpg{
+  display:none;
+  background-position:5px,5px;
+}

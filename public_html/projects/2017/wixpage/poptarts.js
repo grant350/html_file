@@ -2,6 +2,21 @@ var image = document.getElementById("img")
 window.addEventListener("resize", imageSize)
 image.style.margin = "0px"
 
+
+function box() {
+
+  var div = document.createElement("div")
+  div.setAttribute("id", "error")
+  div.backgroundColor = "red"
+  div.fontSize = "40px"
+  div.innerText = "Error Error " + " value is below your limit, please sell"
+  div.color = "blue"
+
+  document.body.prepend(div)
+
+
+}
+
 function imageSize() {
   var timer = setInterval(imageSize, 1000)
   var heights = window.innerHeight
@@ -13,11 +28,15 @@ function imageSize() {
 }
 imageSize()
 
+//
 var times = 0;
+
+
 
 var images = document.getElementById("img2")
 window.addEventListener("resize", imageSize2)
 images.style.margin = "0px"
+
 
 function imageSize2() {
 
@@ -27,6 +46,10 @@ function imageSize2() {
 
   images.height = heights
   images.width = widths
+
+
+
+
 
   var nav = document.getElementById("nav")
   if (window.innerwidth <= 1000) {
@@ -67,11 +90,11 @@ function callForApi() {
     if (xhr.readyState === 4 && xhr.status === 200) {
 
       var popp = JSON.parse(xhr.responseText)
-      var price = popp.data.quotes.USD.price / popp.data.quotes.LTC.price
+      var price = popp.data.quotes.USD.price / popp.data.quotes.ECA.price
       var priceconvert = price.toFixed(6)
-      $("#bit").text("LTC price = " + priceconvert + " USD")
-      $("#bit2").text("Total in LTC USD = " + (priceconvert * 0).toFixed(4))
-      var total = ((priceconvert - 160) / (160) * (100)).toFixed(4)
+      $("#bit").text("Electra price = " + priceconvert + " USD")
+      $("#bit2").text("Total in Electra USD = " + (priceconvert * 3192261).toFixed(4))
+      var total = ((priceconvert - .002352) / (.002302) * (100)).toFixed(4)
       $("#bit2p").text(total + "%")
       if (total <= 0) {
         $("#bit2p").css("color", "red")
@@ -86,7 +109,7 @@ function callForApi() {
 
 
 
-  xhr.open("GET", " https://api.coinmarketcap.com/v2/ticker/1/?convert=LTC", true)
+  xhr.open('GET', ' https://api.coinmarketcap.com/v2/ticker/1/?convert=ECA', true)
   xhr.send(null)
 }
 callForApi()
@@ -118,7 +141,7 @@ function callForEmbercoin() {
 
     }
   }
-  xhr.open("GET", "https://api.coinmarketcap.com/v2/ticker/1/?convert=EMB", true)
+  xhr.open('GET', ' https://api.coinmarketcap.com/v2/ticker/1/?convert=EMB', true)
   xhr.send(null)
 }
 callForEmbercoin()
@@ -136,18 +159,22 @@ callForEmbercoin()
 
           var popp = JSON.parse(xhr.responseText)
           console.log(popp.data.quotes.USD.price)
-          var price = popp.data.quotes.USD.price
+          var price = popp.data.quotes.USD.price / popp.data.quotes.LTC.price
           var priceconvert = price.toFixed(4)
-          $("#bit4").text(" Total in BTC USD = " + priceconvert )
+          $("#bit").text("Litecoin price = " + priceconvert + " USD")
+          $("#bit4").text(" Total in Litecoin USD = " + priceconvert * .02)
 
-          var total = (priceconvert - 9100)/(9100)*(100.0)
+          var total = (priceconvert - 168)/(168)*(100.0)
           $("#bit4p").text(total.toFixed(4) + "%")
 
+console.log(total)
+console.log(total.toFixed(4))
+console.log(total)
+console.log(priceconvert)
 
           if (total <= 0) {
 
             $("#bit4p").css("color", " red")
-
           }else{
             $("#bit4p").css("color", " green")
 
@@ -156,7 +183,7 @@ callForEmbercoin()
         }
       }
 
-      xhr.open("GET", " https://api.coinmarketcap.com/v2/ticker/1/?convert=LTC", true)
+      xhr.open('GET', ' https://api.coinmarketcap.com/v2/ticker/1/?convert=LTC', true)
       xhr.send(null);
 
     }
@@ -167,17 +194,18 @@ callForEmbercoin()
 
     function callForDime() {
 
-          var price = $(".price").text()
-          parseInt(price)
-          console.log(price)
-            price.toFixed(6)
+
+
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var popp = JSON.parse(xhr.responseText)
+          console.log(popp.data.quotes.USD.price)
+          var price = popp.data.quotes.USD.price / popp.data.quotes.DIME.price
+          var priceconvert = price.toFixed(6)
           $("#bit").text("Dime price = " + priceconvert + " USD")
-
-          var totals =92796092.58755217
-
-          $("#bit5").text(" Total in Dime USD = "  + totals * price)
-
-          var total = ((priceconvert - 0.000092) / (0.000092) * (100.0)).toFixed(4)
+          $("#bit5").text(" Total in Dime USD = " + priceconvert * 16949099.57)
+          var total = ((priceconvert - 0.000038) / (0.000038) * (100.0)).toFixed(4)
           $("#bit5p").text(total + "%")
           if (total <= 0) {
             $("#bit5p").css("color", " red")
@@ -185,8 +213,10 @@ callForEmbercoin()
             $("#bit5p").css("color", " green")
 
           }
-
-
+        }
+      }
+      xhr.open('GET', ' https://api.coinmarketcap.com/v2/ticker/1/?convert=DIME', true)
+      xhr.send(null)
     }
     callForDime()
 

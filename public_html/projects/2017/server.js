@@ -83,11 +83,6 @@ console.log(hash)
 
 
 
-
-
-
-
-
 app.listen(3000, function() {
   console.log("server started on 3000 server static files from node, connection waiting......")
 })
